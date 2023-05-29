@@ -4,10 +4,10 @@
 
 @layer base {
     body {
-        @apply text-gray-900 bg-gray-50 text-lg;
+        @apply text-gray-900 bg-gray-50 md:text-lg;
     }
     h1 {
-        @apply font-bold font-syne text-5xl text-black;
+        @apply font-bold font-syne text-4xl md:text-5xl text-black;
     }
 
     h2 {
