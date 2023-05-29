@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: cv
 title: Isaac Newtons's CV
 ---
 # Isaac Newton
