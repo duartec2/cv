@@ -35,4 +35,9 @@
         @apply hover:underline text-sky-600 hover:text-sky-800 dark:text-sky-300 dark:hover:text-sky-500 transition duration-300;
     }
 
+    .tags li {
+        @apply border border-gray-300 bg-gray-200 py-1 px-2 lg:text-sm mx-0.5 my-1 rounded inline-block
+            dark:border-gray-600 dark:bg-gray-700;
+    }
+
 }
