@@ -4,27 +4,29 @@
 
 @layer base {
     body {
-        @apply text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-gray-50 md:text-lg transition-colors duration-500;
+        @apply text-gray-800 bg-gray-50 md:text-lg transition-colors duration-500
+        dark:bg-gray-900 dark:text-gray-50
+        print:dark:bg-white print:dark:text-gray-800;
     }
 
 
     h1 {
-        @apply font-bold font-syne text-4xl md:text-5xl text-black dark:text-white;
+        @apply font-bold font-syne text-4xl md:text-5xl text-black dark:text-white print:dark:text-black;
     }
 
     h2 {
         @apply font-light text-2xl pb-6;
     }
     h3 {
-        @apply font-medium font-syne text-2xl pb-4 pt-6 text-black dark:text-white;
+        @apply font-medium font-syne text-2xl pb-4 pt-6 text-black dark:text-white print:dark:text-black;
     }
 
     h4 {
-        @apply font-semibold text-black dark:text-white;
+        @apply font-semibold text-black dark:text-white print:dark:text-black;
     }
 
     h5 {
-        @apply pb-4 uppercase text-gray-700 dark:text-gray-200 text-sm;
+        @apply pb-4 uppercase text-gray-700 dark:text-gray-200 text-sm print:dark:text-gray-700;
     }
 
     p{
@@ -32,12 +34,13 @@
     }
 
     .link {
-        @apply hover:underline text-sky-600 hover:text-sky-800 dark:text-sky-300 dark:hover:text-sky-500 transition duration-300;
+        @apply hover:underline text-sky-600 hover:text-sky-800 dark:text-sky-300 dark:hover:text-sky-500 transition duration-300 print:dark:text-sky-600;
     }
 
     .tags li {
         @apply border border-gray-300 bg-gray-200 py-1 px-2 lg:text-sm mx-0.5 my-1 rounded inline-block
-            dark:border-gray-600 dark:bg-gray-700;
+            dark:border-gray-600 dark:bg-gray-700
+            print:border-none print:bg-transparent print:p-0 print:m-0 print:block;
     }
 
 }
