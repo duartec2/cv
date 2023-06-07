@@ -13,7 +13,7 @@
 <body class="py-12 px-6 font-lato">
 <nav class="print:hidden">
     <div class="container mx-auto max-w-screen-xl flex justify-end">
-        <button id="dark-toggle" type="button"
+        <button id="dark-toggle" type="button" aria-label="Toggle dark mode"
                 class="text-gray-800 dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
             <svg id="moon-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
@@ -98,9 +98,8 @@
 
     </div>
 </header>
-
 <main class="container mx-auto max-w-screen-xl lg:flex lg:justify-between print:flex print:justify-between">
-    <article class="lg:w-3/5 print:w-3/5">
+    <article class="lg:w-3/5 lg:pr-20 print:w-3/5 lg:border-r lg:border-gray-300 dark:lg:border-gray-900">
 
         <h3>Profile</h3>
         <p>
@@ -146,7 +145,7 @@
         <h5>SEPTEMBER 2001 - DECEMBER 2005, VERACRUZ, MX.</h5>
 
     </article>
-    <aside class="lg:w-1/5 print:w-1/5">
+    <aside class="lg:w-2/5 lg:pl-20 print:w-1/5 lg:border-l lg:border-white dark:lg:border-gray-700">
 
         <h3>Skills</h3>
         <ul class="tags block md:grid md:grid-cols-4 lg:block gap-y-2 gap-x-4 print:block">
@@ -175,9 +174,9 @@
         </ul>
     </aside>
 </main>
-<footer>
+<footer class="mt-10">
     <div class="container mx-auto max-w-screen-xl text-right">
-        <a href="https://duartec2.github.com/cv" class="text-gray-400">https://duartec2.github.com/cv</a>
+        <a href="https://duartec2.github.com/cv" class="text-gray-400 text-sm">https://duartec2.github.com/cv</a>
     </div>
 </footer>
 <script src="assets/js/script.js" defer></script>
